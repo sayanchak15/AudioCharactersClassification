@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type=text/javascript>
+        $(function() {
+            $('a#recordButton').on('click', function(e) {
+                $(this).val('Recording...')
+            e.preventDefault()
+            $.getJSON('/record',
+                function(data) {
+                    console.log("after recording is done");
+                    // document.getElementById("recordButtonBTN").disabled = false;
+                    $("#text").text(data.result);
+                    $("#word").text(data.answer);
+                    $("#recordButtonBTN").removeAttr("disabled");
+                    $("#recordButtonBTN").html('Start Recording');
+            });
+            return false;
+        });
+    });
+</script>
+
+<head>
+         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css')}}" />
+</head>
+<body>
+
+
+<div class='container'>
+    <h1> Please Start speaking slow with clear Alphabets</h1>
+    <div class = 'btn'>
+        <form>
+                <a href=# id=recordButton><button id="recordButtonBTN" class='recordButtonCLS'>Start Recording</button></a>
+        </form>
+    </div>
+    <div class='text'>
+        <p id="text" placeholder="Your letters will appear here!"></p>
+    </div>
+    <div class='word'>
+        <p id="word" placeholder="Your word will appear here!"></p>
+    </div>
+        
+</div>
+
+</body>
+<script src=static/app.js></script>
+</html>

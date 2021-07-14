@@ -1,0 +1,66 @@
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 50px;
+}
+
+
+.container{  
+  position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+  right: 0;
+  margin: auto;
+  background-color: azure;
+
+  text-align: center;  
+  border: 7px solid red;  
+  width: 900px;  
+  height: 700px;  
+  display: grid;
+  }  
+
+
+#recordButtonBTN{  
+font-size: 25px;  
+width: 300px;  
+height: 200px;  
+margin: auto;  
+background-color: coral;
+border-radius: 10px;
+
+}  
+
+#recordButtonBTN:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+   outline: none;
+}
+
+#text{
+border: 2px solid black;  
+width: 800px;  
+height: 100px; 
+margin: auto;
+background: rgb(219, 213, 213);
+font-size: 400%;
+}
+
+#word{
+  border: 2px solid black;  
+  width: 800px;  
+  height: 100px; 
+  margin: auto;
+  background: rgb(219, 213, 213);
+  font-size: 200%;
+  word-wrap: break-word;
+  
+  }
