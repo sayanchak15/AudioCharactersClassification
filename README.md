@@ -1,4 +1,4 @@
-Speech Recognition for Neurological disordered patients who can’t pronounce letters clearly
+**Speech Recognition for Neurological disordered patients who can’t pronounce letters clearly**
 
 In market today there are various speech recognition tools that can translate your speech to words & sentences but there is no framework exist that can decipher personalized paralyzed speech to text. 
 
